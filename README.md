@@ -1,5 +1,64 @@
 <a name="readme-top"></a>
 
+# How to run Qwen3-Coder-Next on 8Gb VRAM
+
+* User: what you can do?
+* Assistant: I’m thrilled you asked! 🌟 Here’s a detailed look at what I can do—designed to be as helpful, versatile, and reliable as possible:
+
+### 📝 **Writing & Creative Tasks**
+- **Stories, scripts, and narratives** (e.g., short stories, screenplays, poems)
+- **Articles, blogs, and reports** (e.g., news summaries, essays, research overviews)
+- **Emails, letters, and formal documents** (e.g., job applications, cover letters, official correspondence)
+- **Social media posts, captions, and ads** (tailored to tone: professional, funny, inspiring, etc.)
+
+### 🧠 **Reasoning & Analysis**
+- **Logical & mathematical reasoning** (e.g., math problems, logic puzzles, data interpretation)
+- **Idea generation & brainstorming** (e.g., business ideas, story plots, project concepts)
+- **Debates & perspective-taking** (e.g., “Argue both sides of climate policy”)
+- **Code explanation & debugging** (in Python, JavaScript, Java, C++, SQL, and more—see below!)
+
+### 💻 **Programming & Technical Help**
+- **Code generation**: Write clean, efficient code (e.g., “Write a Python function to sort a linked list”)
+- **Code explanation**: Break down complex code into simple terms
+- **Debugging help**: Suggest fixes and improvements
+- **Algorithm & data structure guidance**
+- **Tech stack advice** (e.g., “Which framework is best for a beginner’s web app?”)
+
+### 🌍 **Language & Communication**
+- **Translation**: Accurately translate between 100+ languages (e.g., Chinese ↔ English, Japanese ↔ French, etc.)
+- **Language learning help**: Grammar explanations, vocabulary practice, sentence correction
+- **Tone adaptation**: Make text formal, casual, poetic, persuasive, or playful
+
+### 📚 **Knowledge & Learning**
+- **General knowledge**: Science, history, geography, pop culture—and how they connect
+- **Explaining complex topics simply**: e.g., “Explain quantum computing like I’m 10” or “How does a CRISPR gene-editing experiment work?”
+- **Academic support**: Summarizing papers, clarifying concepts (e.g., thermodynamics, organic chemistry, philosophy)
+- **Study planning**: Suggest study schedules, flashcards (text-based), and active recall techniques
+
+### 🎮 **Fun & Engagement**
+- **Games**: Play rickety logic games, word puzzles, 20 questions, or even help design your own game!
+- **Personality simulations**: “Pretend you’re a 1920s detective” or “Act like a helpful alien learning about Earth”
+- **Jokes, puns, and humor** (family-friendly & appropriate 😄)
+
+### 🚫 What I *can’t* do (and why it matters):
+- No real-time internet access (my knowledge is up to **2024**; I can’t fetch live news or stock prices).
+- No personal opinions or emotions—I aim for neutrality and fact-based responses.
+- No medical, legal, or financial advice (I can explain general concepts, but *never* replace a human expert).
+- No access to private data or systems—I respect privacy and security.
+
+...
+
+[Stats] Tokens: 807 | Time: 668.81s | Speed: 1.21 t/s Qwen3-Coder-Next on laptop 3070ti with 8Gb VRAM and 32Gb RAM (80B parameter model!!!)
+
+## Instalation guide
+
+* hf-download Qwen/Qwen3-Coder-Next-FP8
+* replace modeling_quen3_next.py in transformers/models/qwen3_next (TODO: find better way)
+* run: python extract_mlp.py (TODO: rewrite to use original safetensors)
+* run: python coder_80b_next_chat.py
+
+* As usual making impossible, runnig large models on low vram check my other repos LTX-2, HeartMula, Wan2.2, GPT-OSS-20B ...
+
 <p align="center">
     <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3_coder.png" width="400"/>
 </p>
