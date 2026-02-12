@@ -59,6 +59,26 @@
 
 * As usual making impossible, runnig large models on low vram check my other repos LTX-2, HeartMula, Wan2.2, GPT-OSS-20B ...
 
+## Cache warmup test:
+```bash
+User: hi
+Assistant: Hello! How can I help you today? 😊
+
+[Stats] Tokens: 11 | Time: 21.25s | Speed: 0.52 t/s
+
+User: hi
+Assistant: Hi again! 👋 Everything okay? Need help with something—big or small? I'm here for it! 🌟
+
+[Stats] Tokens: 26 | Time: 25.36s | Speed: 1.03 t/s
+
+User: all good
+Assistant: Awesome! I like that positive energy—thanks for sharing. 😊
+Is there anything fun, curious, or helpful you'd like to explore together? 🚀
+(Puns, facts, ideas, or just a chat—I’m game!)
+
+[Stats] Tokens: 50 | Time: 41.70s | Speed: 1.20 t/s
+```
+
 <p align="center">
     <img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-Coder/qwen3_coder.png" width="400"/>
 </p>
